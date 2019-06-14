@@ -1,7 +1,8 @@
 import { Head, Notes } from 'mdx-deck'
+import { CodeSurfer } from "mdx-deck-code-surfer"
 
-export { theme } from './theme'
-
+export { dark as theme } from 'mdx-deck/themes'
+import { Appear } from 'mdx-deck'
 <Head>
   <title>Hooked on React</title>
 </Head>
@@ -11,18 +12,37 @@ export { theme } from './theme'
 
 
 ---
+
+
 Scott Brown
 
 *Daugherty Business Solutions*
 
 ---
 
-hi
+## What we're going to cover
+<ul>
+<Appear>
+<li>Hooks overview</li>
+<li>React architure</li>
+<li>Examples</li>
+</Appear>
+</ul>
 
 ---
-## Edit this file
-
-To create your presentation
+<CodeSurfer
+  title="State"
+  code={require("!raw-loader!./codeSamples/SetState.jsx")}
+  lang="javascript"
+  showNumbers={false}
+  dark={false}
+  steps={[
+    { notes: "Start with this note"},
+    { lines: [6], notes: "Note for the first step" },
+    { range: [5, 9] },
+    { tokens: { 9: [3, 4, 5] }, notes: "Note for the third step" }
+  ]}
+/>
 
 <Notes>
 Create speaker notes with the Notes component

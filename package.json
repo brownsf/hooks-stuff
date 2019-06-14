@@ -8,10 +8,15 @@
     "help": "mdx-deck"
   },
   "devDependencies": {
-    "mdx-deck": "^2.3.2",
+    "mdx-deck": "^1.8.2",
     "mdx-deck-code-surfer": "^0.5.5",
     "raw-loader": "^2.0.0"
   },
   "keywords": [],
-  "description": "Deck created with mdx-deck"
+  "description": "Deck created with mdx-deck",
+  "dependencies": {
+    "mdx-deck-code-surfer": "0.5.5",
+    "raw-loader": "3.0.0",
+    "styled-components": "4.3.1"
+  }
 }
